@@ -1,0 +1,25 @@
+>> test
+Index exceeds matrix dimensions.
+
+Error in eqHist (line 11)
+       a=I(i,j);
+
+Error in test (line 4)
+I2=eqHist(H1,I1);
+ 
+>> test
+>> I=imread('.\images\lena.jfif');
+>> J=brightness(I,50);
+>> subplot(1,2,1);imshow(rgb2gray(I));hold on;subplot(1,2,2);imshow(J);
+>> I=imread('.\images\lena.jfif');
+>> J=brightness(I,-25);
+>> subplot(1,2,1);imshow(rgb2gray(I));hold on;subplot(1,2,2);imshow(J);
+>> I=imread('.\images\lena.jfif');
+>> J=brightness(I,1.5);
+>> subplot(1,2,1);imshow(rgb2gray(I));hold on;subplot(1,2,2);imshow(J);
+>> I=imread('.\images\lena.jfif');
+>> J=contrast(I,1.5);
+>> subplot(1,2,1);imshow(rgb2gray(I));hold on;subplot(1,2,2);imshow(J);
+>> I=imread('.\images\lena.jfif');
+>> J=contrast(I,0.5);
+>> subplot(1,2,1);imshow(rgb2gray(I));hold on;subplot(1,2,2);imshow(J);
